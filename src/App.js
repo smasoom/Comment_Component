@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FaGithub } from "react-icons/fa6";
 import Comment from "./components/Comment";
 import useNode from "./hooks/useNode";
-import "./styles.css";
+import "./layout.css";
 
 const comments = {
   id: 1,

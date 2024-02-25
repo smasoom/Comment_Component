@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import Action from "./Chg";
-import { ReactComponent as DownArrow } from "../assets/down-arrow.svg";
-import { ReactComponent as UpArrow } from "../assets/up-arrow.svg";
+
 
 const Comment = ({
   handleInsertNode,
@@ -96,11 +95,7 @@ const Comment = ({
                     className="reply"
                     type={
                       <>
-                        {expand ? (
-                          <UpArrow width="10px" height="10px" />
-                        ) : (
-                          <DownArrow width="10px" height="10px" />
-                        )}{" "}
+                       
                         REPLY
                       </>
                     }
@@ -108,14 +103,14 @@ const Comment = ({
                   />
                   <Action
                     className="reply"
-                    type="EDIT"
+                    type="CHANGE"
                     handleClick={() => {
                       setEditMode(true);
                     }}
                   />
                   <Action
                     className="reply"
-                    type="DELETE"
+                    type="REMOVE"
                     handleClick={handleDelete}
                   />
                 </>

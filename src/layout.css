@@ -6,6 +6,9 @@ body {
   background-size: 400% 400%;
   animation: gradient 5s ease infinite;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes gradient {
@@ -28,6 +31,8 @@ body {
   flex-direction: column;
 }
 .gitHub {
+  display: flex;
+  flex-wrap: wrap;
   font-size: 2.5rem;
   font-weight: 600;
 }
@@ -36,7 +41,7 @@ body {
   top: 0.4rem;
 }
 .commentContainer {
-  margin-top: 6px;
+  margin-top: 0.4rem;
   background-color: #d3d3d3e0;
   display: flex;
   flex-direction: column;
@@ -47,11 +52,14 @@ body {
 }
 
 .commentContainer:hover {
-  background-color: #d3d3d3bf;
+  background-color: #ffc002bf;
+  color: #e7e7e7;
+  font-weight: 600;
 }
 
 .inputContainer {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
   gap: 15px;
   padding: 3rem;
