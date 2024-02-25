@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaGithub } from "react-icons/fa6";
 import Comment from "./components/Comment";
 import useNode from "./hooks/useNode";
 import "./styles.css";
@@ -30,6 +31,7 @@ const App = () => {
 
   return (
     <div className="App">
+    <p className="gitHub"><a className="github-icon" href="https://github.com/smasoom" target="blank"><FaGithub/></a> <span>Dive into my GITHUB</span></p>
       <Comment
         handleInsertNode={handleInsertNode}
         handleEditNode={handleEditNode}
